@@ -23,3 +23,6 @@ Let’s say you want to start a new **pizza delivery business**. Please create a
 - Free mysql db host (https://remotemysql.com/);
 - Use Git as code source management tool (following Git Flow will be assessed) Add Readme.md file (Project explanation file) to help us in deploying your application.
 - The estimated duration for the task completion is 6 days (no extension of deadline).
+
+### Changelog
+1. Now we user correct buildpack for react app (see https://github.com/mars/create-react-app-buildpack)
