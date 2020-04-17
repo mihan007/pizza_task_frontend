@@ -1,5 +1,24 @@
 # Pizza task, frontend
-## Deploy
+- Released at [https://pizza-task-mk-frontend.herokuapp.com/](https://pizza-task-mk-frontend.herokuapp.com/)
+- Now it has list of pizza and shopping cart
+
+## Deploy at linux / macOs
+```
+yarn install
+REACT_APP_PIZZA_BACKEND_ENPOINT=https://pizza-task-mk-backend.herokuapp.com yarn start
+```
+Note: you may use any REACT_APP_PIZZA_BACKEND_ENPOINT that gives API, e.g. http://127.0.0.1:8000/ if you run artisan serve for backend
+
+## Notes
+1. Used standart workflow:
+    1. Split task into issues https://github.com/mihan007/pizza_task_frontend/issues. You can see finished tasks(closed) and still open
+    2. Each task get it's own branch https://github.com/mihan007/pizza_task_frontend/branches
+    3. After finishing each PR was checked with Travis
+    4. Deploy at Heroku done using Heroku integration with Github. Each push to master lead to deploy
+2. Used https://github.com/facebook/create-react-app for simplicity
+
+## Things left to do
+- All at https://github.com/mihan007/pizza_task_frontend/issues
 
 ## Task description
 Let’s say you want to start a new **pizza delivery business**. Please create a web application for ordering pizza for your clients, which contains a shopping cart. Take the pizza order and the delivery address and contact details for the client. Login is not required but could be available for checking the history of orders.
