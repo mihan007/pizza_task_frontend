@@ -3,6 +3,6 @@ import axios from 'axios';
 // Next we make an 'instance' of it
 const instance = axios.create({
 // .. where we make our configurations
-  //baseURL: 'http://pizza-api.lcl/api/v1'
+  baseURL: 'process.env.PIZZA_BACKEND_ENPOINT'
 });
 export default instance;
