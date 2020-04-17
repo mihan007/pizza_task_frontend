@@ -1,21 +1,11 @@
 import React, { Component } from 'react'
-import { Menu, Popup, List, Button, Image, Sticky } from 'semantic-ui-react'
+import { Button, Menu, Popup } from 'semantic-ui-react'
+import CartComponent from './Cart'
+import { Link } from 'react-router-dom'
 
-const CartComponent = ({ title, id, image, removeFromCart }) => (
-  <List selection divided verticalAlign="middle">
-    <List.Item>
-      <List.Content floated="right">
-        <Button onClick={removeFromCart.bind(this, id)} color="red">
-          Remove
-        </Button>
-      </List.Content>
-      <Image avatar src={image}/>
-      <List.Content>{title}</List.Content>
-    </List.Item>
-  </List>
-)
-export default class MenuComponent extends Component {
+export default class IndexMenuComponent extends Component {
   render () {
+    let Products = this.props.items.map(product => (<CartComponent {...product} />))
     return (
       <Menu fixed="top">
         <Menu.Item name="browse">Innosripta Pizza House</Menu.Item>
@@ -31,10 +21,9 @@ export default class MenuComponent extends Component {
                 Shopping Cart (<b>{this.props.count}</b>)
               </Menu.Item>
             }
-            content={this.props.items.map(product => (
-              <CartComponent {...product} />
-            ))}
+            content={[Products, <Link to="/checkout"><Button fluid primary>Order</Button></Link>]}
             on="click"
+            disabled={this.props.totalEurPrice === 0}
             hideOnScroll
           />
         </Menu.Menu>

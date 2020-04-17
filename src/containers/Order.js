@@ -1,8 +1,7 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as cartActions from '../actions/cart';
 import uniqBy from 'lodash/uniqBy';
-import IndexMenu from '../components/IndexMenu'
+import OrderComponent from '../components/Order'
 
 const mapStateToProps = ({ cart }) => ({
   totalEurPrice: cart.items.reduce((total, product) => total + product.price_eur, 0),
@@ -12,10 +11,9 @@ const mapStateToProps = ({ cart }) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  ...bindActionCreators(cartActions, dispatch),
 });
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(IndexMenu);
+)(OrderComponent);

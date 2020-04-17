@@ -6,7 +6,7 @@ const ProductCard = product => {
   return (
     <Card>
       <div className="card-image">
-        <Image src={image} />
+        <Image src={image} alt={title} />
       </div>
       <Card.Content>
         <Card.Header>{title}</Card.Header>

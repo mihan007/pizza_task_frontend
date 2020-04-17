@@ -22,3 +22,22 @@ body {
 .filterMenu {
   margin-top: 50px !important;
 }
+
+.orderImage {
+  height: 80px !important;
+  width: 80px !important;
+}
+
+.order form {
+  margin-top: 20px;
+}
+
+.order .list {
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(128, 128, 128, 0.14);
+  border-bottom-style: solid;
+}
+
+.order input {
+  width: 40px !important;
+}
