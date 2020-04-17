@@ -1,8 +1,9 @@
-// First we need to import axios.js
 import axios from 'axios';
-// Next we make an 'instance' of it
+import runtimeEnv from '@mars/heroku-js-runtime-env';
+
+const env = runtimeEnv();
 const instance = axios.create({
 // .. where we make our configurations
-  baseURL: process.env.PIZZA_BACKEND_ENPOINT
+  baseURL: env.REACT_APP_PIZZA_BACKEND_ENPOINT
 });
 export default instance;
