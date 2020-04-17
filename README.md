@@ -1,6 +1,7 @@
 # Pizza task, frontend
 - Released at [https://pizza-task-mk-frontend.herokuapp.com/](https://pizza-task-mk-frontend.herokuapp.com/)
-- Now it has list of pizza and shopping cart
+- Now it has list of pizza, shopping cart and draft of order page
+- It doesn't slow by nature. It works slowly because I'm using free services and some of them like db are pretty slow
 
 ## Deploy at linux / macOs
 ```
