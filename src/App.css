@@ -49,6 +49,11 @@ body {
 }
 
 .totalLine {
+  font-weight: normal;
+  font-size: 16pt;
+}
+
+.totalLine {
   font-weight: bold;
   font-size: 20pt;
 }
