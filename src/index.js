@@ -5,10 +5,11 @@ import { PersistGate } from 'redux-persist/integration/react'
 
 import 'semantic-ui-css/semantic.min.css';
 import './App.css';
-
 import App from './containers/App';
-
 import createStore from './store';
+import * as Sentry from '@sentry/browser';
+
+Sentry.init({dsn: env.REACT_APP_SENTRY});
 const { store, persistor } = createStore();
 
 ReactDOM.render(
