@@ -50,5 +50,10 @@ body {
 
 .totalLine {
   font-weight: normal;
+  font-size: 16pt;
+}
+
+.totalLine {
+  font-weight: normal;
   font-size: 14pt;
 }
