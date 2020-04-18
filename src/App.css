@@ -41,3 +41,8 @@ body {
 .order input {
   width: 40px !important;
 }
+
+.clearBtn {
+  margin-bottom: 5px !important;
+  background-color: rgba(34,36,38,.15) !important;
+}
