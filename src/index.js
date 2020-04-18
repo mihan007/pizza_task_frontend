@@ -8,7 +8,9 @@ import './App.css';
 import App from './containers/App';
 import createStore from './store';
 import * as Sentry from '@sentry/browser';
+import runtimeEnv from '@mars/heroku-js-runtime-env'
 
+const env = runtimeEnv();
 Sentry.init({dsn: env.REACT_APP_SENTRY});
 const { store, persistor } = createStore();
 
