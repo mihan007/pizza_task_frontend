@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import uniqBy from 'lodash/uniqBy';
 import OrderComponent from '../components/Order'
 

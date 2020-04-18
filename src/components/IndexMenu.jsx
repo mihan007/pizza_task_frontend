@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 export default class IndexMenuComponent extends Component {
   render () {
     let Products = this.props.items.map(product => (<CartComponent {...product} />))
+    console.log('this.props', this.props)
     return (
       <Menu fixed="top">
         <Menu.Item name="browse">Innosripta Pizza House</Menu.Item>
@@ -21,7 +22,11 @@ export default class IndexMenuComponent extends Component {
                 Shopping Cart (<b>{this.props.count}</b>)
               </Menu.Item>
             }
-            content={[Products, <Link to="/checkout"><Button fluid primary>Order</Button></Link>]}
+            content={[
+              Products,
+              <Button fluid secondary size={'mini'} className={'clearBtn'} onClick={this.props.clearCart.bind(this)}>Clear</Button>,
+              <Link to="/checkout"><Button fluid primary>Order</Button></Link>
+            ]}
             on="click"
             disabled={this.props.totalEurPrice === 0}
             hideOnScroll
