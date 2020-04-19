@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as cartActions from '../actions/cart';
+import * as productActions from '../actions/product';
 import ProductCard from '../components/ProductCard';
 
 const mapStateToProps = ({ cart }, { id }) => ({
@@ -8,7 +8,7 @@ const mapStateToProps = ({ cart }, { id }) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  ...bindActionCreators(cartActions, dispatch),
+  ...bindActionCreators(productActions, dispatch),
 });
 
 export default connect(

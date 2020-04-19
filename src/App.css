@@ -50,10 +50,22 @@ body {
 
 .totalLine {
   font-weight: normal;
-  font-size: 16pt;
+  font-size: 14pt;
+  margin-top: 5px;
 }
 
-.totalLine {
-  font-weight: normal;
-  font-size: 14pt;
+.eur.icon, .usd.icon {
+  margin-right: -5px !important;
+}
+
+.contactForm {
+  margin-top: 28px;
+}
+
+.contactForm h2 {
+  margin-bottom: 0;
+}
+
+.contactForm form {
+  margin-top: 14px;
 }
