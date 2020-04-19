@@ -5,10 +5,10 @@ import _ from 'lodash'
 
 import ProductCard from '../containers/ProductCard'
 import Filter from '../containers/Filter'
-import IndexMenu from '../containers/Menu'
-import Order from '../containers/Order'
+import IndexMenu from '../containers/IndexMenu'
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 import CheckoutMenu from './CheckoutMenu'
+import OrderWrapper from '../containers/order/Wrapper'
 
 class App extends Component {
   processData (data) {
@@ -42,7 +42,7 @@ class App extends Component {
             </Route>
             <Route exact path="/checkout">
               <CheckoutMenu/>
-              <Order/>
+              <OrderWrapper/>
             </Route>
           </Switch>
         </Router>

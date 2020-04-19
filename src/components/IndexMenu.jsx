@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom'
 export default class IndexMenuComponent extends Component {
   render () {
     let Products = this.props.items.map(product => (<CartComponent {...product} />))
-    console.log('this.props', this.props)
     return (
       <Menu fixed="top">
         <Menu.Item name="browse">Innosripta Pizza House</Menu.Item>
