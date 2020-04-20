@@ -43,7 +43,7 @@ body {
   text-align: center;
 }
 
-.clearBtn {
+.clearBtn, .backToPizzaListBtn {
   margin-bottom: 5px !important;
   background-color: rgba(34,36,38,.15) !important;
 }
