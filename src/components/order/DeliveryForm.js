@@ -94,7 +94,6 @@ export default function DeliveryForm (props) {
           </Button>
         }
       </Form>
-      <i>Work in progress...</i>
     </div>
   )
 }
