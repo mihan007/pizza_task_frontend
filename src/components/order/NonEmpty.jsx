@@ -6,8 +6,8 @@ export default class NonEmpty extends Component {
   render () {
     return (
       <div>
-        <LinesAndTotal />
-        <DeliveryForm />
+        <LinesAndTotal/>
+        <DeliveryForm onSubmit={() => this.props.handleOrderSubmit(this.props)} loading={this.props.loading} />
       </div>
     )
   }

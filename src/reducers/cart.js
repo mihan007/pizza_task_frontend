@@ -35,6 +35,7 @@ export default (state = initialState, action) => {
         items: state.items.filter(o => o.id !== action.payload)
       }
     case 'CLEAR_CART':
+    case 'ORDER_FORM_RESET':
       return {
         ...state,
         items: []
