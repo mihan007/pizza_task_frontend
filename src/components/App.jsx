@@ -18,7 +18,8 @@ class App extends Component {
   }
 
   componentWillMount () {
-    const { setProducts } = this.props
+    const { setProducts, resetDeliveryForm } = this.props
+    resetDeliveryForm()
     appAxios.get('/api/v1/products').then(({ data }) => {
       let processedData = this.processData(data)
       setProducts(processedData)

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Grid } from 'semantic-ui-react'
 import Empty from './Empty'
-import NonEmpty from './NonEmpty'
+import NonEmpty from '../../containers/order/NonEmpty'
 
 export default class Wrapper extends Component {
   render () {
