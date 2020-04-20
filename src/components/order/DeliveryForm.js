@@ -1,5 +1,6 @@
 import { Button, Form } from 'semantic-ui-react'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default class DeliveryForm extends React.Component {
   render () {
@@ -18,6 +19,9 @@ export default class DeliveryForm extends React.Component {
           <Form.Checkbox label='Please call me to confirm the order'/>
         </Form>
         <br/>
+        <Link to='/'>
+          <Button fluid secondary size={'mini'} className={'backToPizzaListBtn'}>Back to the pizza list</Button>
+        </Link>
         <Button primary fluid>Place the order</Button>
         <i>Work in progress...</i>
       </div>
